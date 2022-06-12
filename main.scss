@@ -1,0 +1,21 @@
+.image-zoom {
+	overflow: hidden;
+	transform: rotate(0.01deg);
+
+	&:hover {
+		.image-zoom__image {
+			transform: scale(1.5);
+		}
+	}
+
+	&__image {
+		transition: transform 1s ease;
+		transform: scale(1);
+		transform-style: preserve-3d;
+	}
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
